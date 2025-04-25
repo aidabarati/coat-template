@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coat</title>
+    <link rel="stylesheet" href="coat.css">
+    <script src="coat.js"></script>
+</head>
+
+<body onload="loading()">
+    <!-- header -->
+    <div class="header">
+        <div class="header-img">
+            <img src="logo coat.png" alt="logo img">
+            <p>بوتیک مهرداد</p>
+        </div>
+        <div class="menu">
+            <menu>
+                <a href="#">
+                    <li> خانه </li>
+                </a>
+                <a href="#">
+                    <li> محصولات ویژه </li>
+                </a>
+                <a href="#">
+                    <li> فروشگاه </li>
+                </a>
+                <a href="#">
+                    <li> درباره ما </li>
+                </a>
+                <a href="#">
+                    <li> تماس با ما </li>
+                </a>
+            </menu>
+        </div>
+        <div class="header-icons">
+            <img src="basket.png" alt="">
+            <img onclick="user()" src="user.png" alt="">
+        </div>
+    </div>
+
+    <!-- banner -->
+    <div class="banner">
+        <div class="banner-left">
+            <menu>
+                <li>
+                    <img src="snow.png" alt="">
+                    <p> تنوع بالا </p>
+                </li>
+                <li>
+                    <img src="snow.png" alt="">
+                    <p> مناسب با هر سلیقه ای </p>
+                </li>
+                <li>
+                    <img src="snow.png" alt="">
+                    <p> مناسب برای هر مجلسی </p>
+                </li>
+                <li>
+                    <img src="snow.png" alt="">
+                    <p> قیمت مناسب </p>
+                </li>
+                <li>
+                    <img src="snow.png" alt="">
+                    <p> ارسال رایگان </p>
+                </li>
+
+            </menu>
+        </div>
+        <div class="banner-right">
+            <div class="banner-right-imgs">
+                <div class="img-left">
+                    <img class="left" src="coat (6).jpg" alt="">
+
+                </div>
+                <div class="img-right">
+
+                    <img class="right" src="coat (2).jpg" alt="">
+                </div>
+            </div>
+            <div class="banner-right-categ">
+                <div class="categ">
+                    <img src="coat.png" alt="">
+                    <p> دسته بندی </p>
+                </div>
+                <div class="daily-offer">
+                    <p class="dayly-offer">
+                        پیشنهاد روز
+                    </p>
+                    <div class="carosel-pic2">
+                        <div class="slides fiding">
+                            <img src="coat (6).jpg" alt="">
+                        </div>
+
+                        <div class="slides fiding">
+                            <img src="coat (5).jpg" alt="">
+                        </div>
+                        <div class="slides fiding">
+                            <img src="coat (4).jpg" alt="">
+                        </div>
+                        <div class="slides fiding">
+                            <img src="coat (3).jpg" alt="">
+                        </div>
+                        <img src="right.png" class="mynext" onclick="plusSlides(1)">
+                        <img src="left.png" class="mybefore" onclick="plusSlides(-1)">
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- product carosel -->
+    <div class="carosel-part">
+        <div class="about-us">
+            <!-- <div class="aboutus-img">
+                <img src="about-us.png" alt="">
+            </div> -->
+            <h3 class="about-title"> درباره ما </h3>
+            <p class="about-info">
+                از سال ۱۳۸۰ که بوتیک مهرداد فعالیت خودش رو شروع کرده، مفتخریم که تا امروز خدمت رسانی کردیم و همواره
+                میکنیم
+            </p>
+        </div>
+
+        <div class="product-carosel">
+            <div class="carosel">
+                <div class="product">
+                    <h4 class="title-carosel"> محصولات ویژه </h4>
+
+                    <div class="med-related-prod-wrap" id="med-related-prod-wrapper">
+                        <div class="med-rel-prod-slider-wrapper">
+                            <div class="med-rel-prod-slider carousel-content">
+
+                                <div class="med-product-card">
+                                    <div class="related-prod-wrapper">
+                                        <img src="coat (3).jpg" alt="" class="related-prod-img">
+                                    </div>
+                                    <div class="related-prod-detail">
+                                        <p class="rel-med-name"> کت شماره ۲ </p>
+                                        <p class="rel-prod-price"> ۲۸۰۰۰۰ تومان </p>
+                                    </div>
+                                </div>
+
+                                <div class="med-product-card">
+                                    <div class="related-prod-wrapper">
+                                        <img src="coat (4).jpg" alt="" class="related-prod-img">
+                                    </div>
+                                    <div class="related-prod-detail">
+                                        <p class="rel-med-name"> کت شماره۴ </p>
+                                        <p class="rel-prod-price"> ۲۳۰۰۰۰ تومان </p>
+                                    </div>
+                                </div>
+
+                                <div class="med-product-card">
+                                    <div class="related-prod-wrapper">
+                                        <img src="coat (3).jpg" alt="" class="related-prod-img">
+                                    </div>
+                                    <div class="related-prod-detail">
+                                        <p class="rel-med-name"> کت شماره ۳ </p>
+                                        <p class="rel-prod-price"> ۲۱۰۰۰۰ تومان </p>
+                                    </div>
+                                </div>
+
+                                <div class="med-product-card">
+                                    <div class="related-prod-wrapper">
+                                        <img src="coat (4).jpg" alt="" class="related-prod-img">
+                                    </div>
+                                    <div class="related-prod-detail">
+                                        <p class="rel-med-name"> کت شماره ۱ </p>
+                                        <p class="rel-prod-price"> ۲۸۰۰۰۰ تومان </p>
+                                    </div>
+                                </div>
+
+                                <div class="med-product-card">
+                                    <div class="related-prod-wrapper">
+                                        <img src="coat (3).jpg" alt="" class="related-prod-img">
+                                    </div>
+                                    <div class="related-prod-detail">
+                                        <p class="rel-med-name"> کت شماره ۵ </p>
+                                        <p class="rel-prod-price"> ۶۵۰۰۰۰ تومان </p>
+                                    </div>
+                                </div>
+
+                                <div class="med-product-card">
+                                    <div class="related-prod-wrapper">
+                                        <img src="coat (4).jpg" alt="" class="related-prod-img">
+                                    </div>
+                                    <div class="related-prod-detail">
+                                        <p class="rel-med-name"> کت شماره ۷ </p>
+                                        <p class="rel-prod-price"> ۸۵۰۰۰۰ تومان </p>
+                                    </div>
+                                </div>
+
+                                <div class="med-product-card">
+                                    <div class="related-prod-wrapper">
+                                        <img src="coat (3).jpg" alt="" class="related-prod-img">
+                                    </div>
+                                    <div class="related-prod-detail">
+                                        <p class="rel-med-name"> کت شماره ۸ </p>
+                                        <p class="rel-prod-price"> ۱۱۵۰۰۰۰ تومان </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="med-slider-arrow-section">
+                                <button class="med-slider-prev med-slider-arrow btn-left" aria-label="left-arrow"
+                                    onclick="" id="med-btn-left" type="button"></button>
+                                <button class="med-slider-next med-slider-arrow btn-right" aria-label="right-arrow"
+                                    onclick="" id="med-btn-right" type="button"></button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div class="top-weekly">
+                <div class="weekly-title">
+                    <img src="coat.png" alt="">
+                    <div class="weekly-p"> پیشنهاد هفته </div>
+                    <!-- <div class="carosel-pic3">
+                        <div class="slideha fiding">
+                            <img src="coat (6).jpg" alt="">
+                        </div>
+                        <div class="slideha fiding">
+                            <img src="coat (2).jpg" alt="">
+                        </div>
+                        <div class="slideha fiding">
+                            <img src="coat (5).jpg" alt="">
+                        </div>
+                        <div class="slideha fiding">
+                            <img src="coat (4).jpg" alt="">
+                        </div>
+                        <div class="slideha fiding">
+                            <img src="coat (3).jpg" alt="">
+                        </div>
+                        <img src="icon-close-512.png" class="mynext" onclick="plus_Slides(1)">
+                        <img src="left.png" class="mybefore" onclick="plus_Slides(-1)">
+                    </div> -->
+                </div>
+                <div class="week-offer">
+                    <img src="coat (1).jpg" alt="">
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="logo-icon-holde">
+            <div class="logo-holder">
+                <p> بوتیک مهرداد </p>
+                <img src="logo coat.png" alt="">
+            </div>
+            <div class="space"></div>
+            <div class="icons-holder">
+                <a href="#"><img src="telegram.png" alt=""></a>
+                <a href="#"><img src="instagram.png" alt=""></a>
+                <a href="#"><img src="whatsapp.png" alt=""></a>
+            </div>
+        </div>
+
+        <div class="links">
+            <div class="fast-link">
+                <p class="title"> دسترسی سریع </p>
+                <ul>
+                    <li>
+                        <img src="left.png" alt="">
+                        <p> فروشگاه </p>
+                    </li>
+                    <li>
+                        <img src="left.png" alt="">
+                        <p> پرفروش ترین ها </p>
+                    </li>
+                    <li>
+                        <img src="left.png" alt="">
+                        <p> تماس با ما </p>
+                    </li>
+                    <li>
+                        <img src="left.png" alt="">
+                        <p> نمایندگی ها </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact-us">
+                <p> ارتباط با ما </p>
+                <ul>
+                    <li>
+                        <img src="map.png" alt="">
+                        <p> اصفهان، چهارباغ بالا، بوتیک مهرداد </p>
+                    </li>
+                    <li>
+                        <img src="phone.png" alt="">
+                        <p> 0123456789 </p>
+                    </li>
+                    <li>
+                        <img src="email.png" alt="">
+                        <p> test@gmail.com </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="email">
+                <p> جهت اطلاع از آخرین تخفیف ها ایمیل خود را وارد کنید </p>
+                <input type="email" placeholder="test@gmail.com" name="" value="">
+                <button type="submit"> ارسال </button>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p class="dev-text"> طراحی و توسعه: آیدا براتی </p>
+            <p class="copyright-text"> کلیه حقوق مادی و معنوی این سایت محفوظ می باشد </p>
+        </div>
+    </div>
+
+    <div id="discount-popup" class="discount-popup">
+        <img onclick="close_box()" src="icon-close-512.png" alt="">
+        <p class="top-text"> تا ۲۵ اردیبهشت از </p>
+        <div class="percent">
+            <p class="percent-text">
+                30
+                درصد تخفیف
+            </p>
+        </div>
+        <p class="last-text"> استفاده کن <br>
+            ABC123 :کد تخفیف </p>
+    </div>
+
+    <div id="user-popup" class="user-popup">
+        <div class="exit-user">
+            <img onclick="closebox()" src="icon-close-512.png" alt="">
+
+        </div>
+        <div class="logo-input-holder">
+            <img src="logo coat.png" alt="">
+            <input type="text" placeholder="نام کاربری">
+            <input type="password" placeholder="رمز عبور">
+            <br><button type="submit"> ارسال </button>
+            <p class="forget">
+                ثبت نام
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
